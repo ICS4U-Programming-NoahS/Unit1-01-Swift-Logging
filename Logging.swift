@@ -14,11 +14,11 @@
 import Foundation
 
 // Declare constants
-let logLength1 = 0.25;
-let logLength2 = 0.5;
-let logLength3 = 1.0;
-let maxTruckWeight = 1100.0;
-let fullLogWeight = 20.0;
+let logLength1 = 0.25
+let logLength2 = 0.5
+let logLength3 = 1.0
+let maxTruckWeight = 1100.0
+let fullLogWeight = 20.0
 
 // Define the different possible error types
 enum InputError: Error {
@@ -42,7 +42,7 @@ repeat {
                 // If user does not enter a positive number
                 print("The log length must be positive.")
             // If the user's log length is not valid'
-            } else if (logLength != 1 && logLength != 0.5 && logLength != 0.25) {
+            } else if logLength != 1 && logLength != 0.5 && logLength != 0.25 {
                 // Tell the user the valid log lengths
                 print("The log length must be ", logLength1, "m, ", logLength2, "m, or ", logLength3, "m.")
             } else {
